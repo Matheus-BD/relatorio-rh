@@ -19,7 +19,7 @@ with open("funcionarios.csv", "r", encoding="utf-8") as f:
 media_salaria = calcular_media(funcionarios_antigos)
 print(f"R$ {media_salaria:.2f}".replace(".", ","))
 
-with open("relatorio.csv", "w", encoding="utf-8") as f:
+with open("relatorio.csv", "w", encoding="utf-8", newline="") as f:
     funcionarios = []
     funcionarios.append(["nome", "departamento", "salario", "anos_empresa", "faixa_salarial"])
 
